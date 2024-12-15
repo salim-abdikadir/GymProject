@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</Payment></title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1> Payment Form </h1>
+    <form>
+        <div class="container">
+            <section>
+                <div class="text">
+                    <div>
+                        <label for="id">Member ID</label><br>
+                        <input type="number" id="number" name="number" placeholder="Enter ID" required>
+                    </div>
+                    <div>
+                    <label for="name">First Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter first name">
+                </div>
+                <div>
+                    <label for="name">Middle Name</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter middle name">
+                </div>
+                <div>
+                    <label for="name">Last Name</label><br>
+                    <input type="text" id="name" name="name" required placeholder="Enter last name">
+                </div>
+                <div>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter phone">
+                </div>
+                </div>
+            </section>
+            <section>
+                <div class="text2">
+                    <div>
+                        <label for="date">Payment Date</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+                        <label for="amount">Amount Paid</label><br>
+                        <input type="number" id="amount" name="amount" required placeholder="Enter amount">
+                    </div>
+
+                    <div>
+                        <h4>Month</h4>
+                        <select for="select">
+                            <option value="month">Month</option>
+                            <option value="month">January</option>
+                            <option value="month">February</option>
+                            <option value="month">March</option>
+                            <option value="month">April</option>
+                            <option value="month">May</option>
+                            <option value="month">June</option>
+                            <option value="month">July</option>
+                            <option value="month">August</option>
+                            <option value="month">September</option>
+                            <option value="month">October</option>
+                            <option value="month">November</option>
+                            <option value="month">December</option>
+                        </select><br>
+                    </div>
+                    <div>
+                        <h4>Payment Method</h4>
+                        <select for="select">
+                            <option value="month">Select</option>
+                            <option value="month">On Hand</option>
+                            <option value="month">On ZAAD</option>
+                            <option value="month">On eDAHAB</option>
+                        </select><br> 
+                    </div>
+                    <div class="comment">
+                        <label for="comment">Comment:</label><br>
+                        <textarea id="comment" name="comment" placeholder="comment..." ></textarea>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="sawir">
+                    <label for="profilePicture">Image:</label>
+                    <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+                    <div id="selectedImage"></div>
+                </div>
+                <div class="text4">
+                    <div class="shift">
+                        <label for="name"><span>Shift:-</span></label><br>
+                        <input type="radio" id="morning" name="shift" value="Morning" required>
+                        <label for="morning">Morning</label>
+                        <input type="radio" id="Afternoon" name="shift" value="Afternoon" required>
+                        <label for="Afternoon">Afternoon</label>
+                        <input type="radio" id="Evening" name="shift" value="Evening" required>
+                        <label for="Evening">Evening</label>
+                    </div>
+                    <div class="gender">
+                        <label><span>Gender:-</span></label><br>
+                        <input type="radio" id="male" name="gender" value="Male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    <div class="btns">
+        <button type="submit">Save</button>
+        <button type="submit">Update</button>
+        <button type="reset">Clear</button>
+    </div>
+    </form>
+    <form action="">
+    <div class="image">
+        <input type="search" name="query" placeholder="Search..." required>
+        <button type="submit">Search</button>
+      </div>
+    </form>
+    <script src="app.js" defer></script>
+</body>
+</html>
